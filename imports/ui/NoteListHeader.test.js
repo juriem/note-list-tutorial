@@ -17,9 +17,7 @@ if( Meteor.isClient ) {
             const spy = expect.createSpy();
             const wrapper = mount(<NoteListHeader meteorCall={spy}/>);
             wrapper.find('button').simulate('click');
-            expect(spy.calls.length).toBe(1);
-            expect(spy.calls[0].arguments.length).toBe(1);
-            expect(spy.calls[0].arguments[0]).toBe('notes.insert'  );
+            expect(spy).toHaveBeenCalledWith('notes.insert');
         });
     });
 }
