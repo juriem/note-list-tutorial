@@ -19,7 +19,7 @@ export class Editor extends React.Component {
         const currentNoteId = this.props.note ? this.props.note._id : undefined;
         const prevNoteId = prevProps.note ? prevProps.note._id : undefined;
 
-        if (currentNoteId && currentNoteId !== prevNoteId) {
+        if( currentNoteId && currentNoteId !== prevNoteId ) {
             this.setState({
                 title: this.props.note.title,
                 body: this.props.note.body
@@ -52,7 +52,7 @@ export class Editor extends React.Component {
 
         if( this.props.note ) {
             return (
-                <div>
+                <div className="editor">
                     <input
                         ref="title"
                         type="text"
@@ -70,7 +70,9 @@ export class Editor extends React.Component {
             )
         } else {
             return (
-                <p>{this.props.selectedNoteId ? 'Note not found' : 'Pick or create note to get started'}</p>
+                <div className="editor">
+                    <p>{this.props.selectedNoteId ? 'Note not found' : 'Pick or create note to get started'}</p>
+                </div>
             )
         }
     }

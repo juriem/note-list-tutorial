@@ -7,6 +7,7 @@ export const NoteListHeader = (props) => {
     return (
         <div>
             <button
+                className="button"
                 onClick={() => {
                     props.meteorCall('notes.insert', (err, res) => {
                         if (!err) {

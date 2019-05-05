@@ -1,3 +1,12 @@
+// Item List
+.item-list {
+  background-color: white;
+  border: 1px solid $grey;
+  overflow-y: scroll;
+  width: 100rem;
+}
+
+// Item
 .item {
   background: $item-bg;
   border: 1px solid $item-border;
