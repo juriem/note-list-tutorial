@@ -4,11 +4,13 @@
   padding: $space;
   display: flex;
   height: $page-content-height;
+  padding: $large-space $space;
 }
 
 .page-content__sidebar {
   display: flex;
   width: $page-content-sidebar-width;
+  padding-right: $large-space;
 }
 
 .page-content__main {
