@@ -1,5 +1,5 @@
 {
-  "name": "short-lnk",
+  "name": "note-app",
   "private": true,
   "scripts": {
     "start": "meteor run",
