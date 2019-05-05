@@ -54,6 +54,7 @@ export class Editor extends React.Component {
             return (
                 <div>
                     <input
+                        ref="title"
                         type="text"
                         value={this.state.title}
                         placeholder="Your note"
